@@ -27,6 +27,7 @@ services:
         - ./concerto/config/parameters_uio.yml:/usr/src/concerto/app/config/parameters_uio.yml
         - ./concerto/config/routing_custom.yml:/usr/src/concerto/app/config/routing_custom.yml
         - ./concerto/config/test_base.html.twig:/usr/src/concerto/app/Resources/views/test_base.html.twig
+        - ./concerto/config/home.html.twig:/usr/src/concerto/src/Concerto/PanelBundle/Resources/views/home.html.twig
         - ./concerto/R:/usr/src/concerto/R
         - ./concerto/rcache:/usr/src/concerto/src/Concerto/PanelBundle/Resources/public/rcache
         - ./concerto/files:/usr/src/concerto/src/Concerto/PanelBundle/Resources/public/files
