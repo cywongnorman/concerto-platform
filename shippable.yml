@@ -15,12 +15,12 @@ build:
     - bower install --allow-root
   post_ci:
     - cd $SHIPPABLE_BUILD_DIR
-    - docker build -t campsych/concerto-platform:$BRANCH .
-    - if [ "$IS_GIT_TAG" = "true" ]; then docker tag campsych/concerto-platform:$BRANCH campsych/concerto-platform:$GIT_TAG_NAME; fi
-    - if [ "$BRANCH" = "master" ]; then docker tag campsych/concerto-platform:$BRANCH campsych/concerto-platform:latest; fi
-    - docker push campsych/concerto-platform:$BRANCH
-    - if [ "$IS_GIT_TAG" = "true" ]; then docker push campsych/concerto-platform:$GIT_TAG_NAME; fi
-    - if [ "$BRANCH" = "master" ]; then docker push campsych/concerto-platform:latest; fi
+    - docker build -t cywongnorman/concerto-platform:$BRANCH .
+    - if [ "$IS_GIT_TAG" = "true" ]; then docker tag cywongnorman/concerto-platform:$BRANCH cywongnorman/concerto-platform:$GIT_TAG_NAME; fi
+    - if [ "$BRANCH" = "master" ]; then docker tag cywongnorman/concerto-platform:$BRANCH cywongnorman/concerto-platform:latest; fi
+    - docker push cywongnorman/concerto-platform:$BRANCH
+    - if [ "$IS_GIT_TAG" = "true" ]; then docker push cywongnorman/concerto-platform:$GIT_TAG_NAME; fi
+    - if [ "$BRANCH" = "master" ]; then docker push cywongnorman/concerto-platform:latest; fi
 
 integrations:
   hub:
