@@ -231,7 +231,7 @@ class AdministrationService
 
     public function getLatestPlatformMeta()
     {
-        return "https://raw.githubusercontent.com/campsych/concerto-platform/" . $this->getGitBranch() . "/src/Concerto/PanelBundle/Resources/public/feeds/platform_meta.yml";
+        return "https://raw.githubusercontent.com/cywongnorman/concerto-platform/" . $this->getGitBranch() . "/src/Concerto/PanelBundle/Resources/public/feeds/platform_meta.yml";
     }
 
     public function getGitBranch()
