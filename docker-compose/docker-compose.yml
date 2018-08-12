@@ -17,7 +17,7 @@ services:
 
     concerto:
       build: ./concerto
-      image: campsych/concerto-platform:latest
+      image: cywongnorman/concerto-platform:latest
       container_name: concerto
       restart: unless-stopped
       volumes:
