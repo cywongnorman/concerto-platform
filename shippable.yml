@@ -25,4 +25,4 @@ build:
 integrations:
   hub:
     - integrationName: DockerHub
-      type: docker
+      type: dockerRegistryLogin
