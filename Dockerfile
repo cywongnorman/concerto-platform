@@ -35,10 +35,6 @@ RUN apt-get update -y \
     sockets \
     xml \
     zip
-    
-RUN curl --silent --show-error https://getcomposer.org/installer | php
-RUN mv composer.phar /usr/local/bin/composer
-# RUN composer
 
 COPY . /usr/src/concerto/
 COPY build/php.ini /usr/local/etc/php/php.ini
